@@ -100,7 +100,12 @@
                         if (words[i].toLowerCase()==manPronom[i2]||words[i].toLowerCase()==femPronom[i2]){
                             for (let i3=0;i3<mas_femEndings.length;i3++)
                                 if (words[i].toLowerCase()=='der' && words[i+1].endsWith('er')){
+                                    if (words[i].charAt(0)===words[i].charAt(0).toUpperCase()){
+                                        words[i]="Der:die"
+                                    }else{
+                                    words[i]="der:die"
                                     words[words[i+1]=words[i+1]+":in"]
+                                    }
                                     break
                                 }
                                 else if (words[i+1].endsWith(mas_femEndings[i3])){
