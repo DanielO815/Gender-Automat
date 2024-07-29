@@ -58,7 +58,7 @@
                 indem sie die Knie beugen und den Rücken gerade halten. 
                 Danach strecken die Tänzer die Beine wieder und 
                 heben sich auf die Zehenspitzen für eine Relevé. 
-                Die Lehrer erklärt die nächste Bewegung. 
+                Der Lehrer erklärt die nächste Bewegung. 
                 Zum Schluss führen die Tänzer eine Pirouette aus, 
                 indem sie sich auf einem Bein drehen und das andere Bein anheben.    
             </p>
@@ -99,10 +99,14 @@
                     for (let i2=0;i2<manPronom.length;i2++)
                         if (words[i].toLowerCase()==manPronom[i2]||words[i].toLowerCase()==femPronom[i2]){
                             for (let i3=0;i3<mas_femEndings.length;i3++)
-                                if (words[i+1].endsWith(mas_femEndings[i3])){
+                                if (words[i].toLowerCase()=='der' && words[i+1].endsWith('er')){
+                                    words[words[i+1]=words[i+1]+":in"]
+                                    break
+                                }
+                                else if (words[i+1].endsWith(mas_femEndings[i3])){
                                     //document.getElementById("targetText").innerText=document.getElementById("targetText").innerText + words[i+1] 
                                     words[i+1]=words[i+1]+":innen"
-                                    
+                                    break
                                 }    
                         }
                 }
