@@ -1,193 +1,156 @@
 <<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="de">
-    <header>
-        <title>Homepage WebAppStartup</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-        crossorigin="anonymous"/>
-        
-        <nav>
-            <ul class="bg-dark text-light text-end">
-            
-                <li class="d-inline">
-                
-                <form>
-                    
-                <input class="me-3" type="text" name="suche" placeholder="Suche">
-            
-                </form>
-                
-                </li>
-            <div class="me-3">
-                <li class="d-inline"><a
-                href="https://www.instagram.com/WebAppStartup">Instagram</a></li>
-                <li class="d-inline"><a
-                href="https://www.facebook.com/WebAppStartup">Facebook</a></li>
-                <li class="d-inline"><a
-                href="contact.html">Kontakt</a></li>
-            </div>    
-            </ul>
-        </nav>
-        </header>
-<body>
-    <main>
-    <div class="row">
-    <div class="col-lg–4 col-md-6col-sm–12">
-      <nav class="navbar bg-light">
-        <ul>
-        <li><a href="home.html">Homepage</a></li>
-        <li><a href="services.html">Unsere Leistungen</a></li>
-        <li><a href="products.html">Unsere Produkte</a></li>
-        <li><a href="prices.html">Unsere Preise</a></li>
-        <li><a href="about.html">Über uns</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-lg–8 col-sm–12 ms-3"> 
-      <section>
-        <h1>Willkommen auf der Homepage von WebAppStartup</h1>
-        <p>
-        Wir konzipieren und implementieren fantastische Web-Applikationen!
-        </p>
-      </section>
-      <section>
-        <h2>Unsere Leistungen</h2>
-        <p>
-        Wir beraten bei der Erstellung von Homepages, konzipieren und implementieren Websites.
-        </p>
-      </section>
-      <section>
-        <h2>Unsere Produkte</h2>
-        <p>
-        Wir haben einen Homepage-Baukasten entwickelt.
-        </p>
-      </section>
-      <section>
-        <h2>Unsere Preise</h2>
-      </section>
-    
-        <table>
-            <thead>
-            <tr>
-            <th>Leistung</th>
-            <th>Einzelpreis</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td>Stundensatz Beratung</td>
-            <td>&euro; 100,--</td>
-            </tr>
-            <tr>
-            <td>Tagessatz Beratung</td>
-            <td>&euro; 600,--</td>
-            </tr>
-            <tr>
-            <td>Homepage Baukasten pro Monat</td>
-            <td>&euro; 1.000,--</td>
-            </tr>
-            </tbody>
-            </table>
-    </div>
-    </div>
-    </main>
-</body>
-<footer>
-    <nav>
-    <ul>
-    <li><a href="privacy.html">Datenschutz</a></li>
-    <li><a href="imprint.html">Impressum</a></li>
-    </ul>
-    </nav>
-    </footer>
-</html> 
-=======
-<!DOCTYPE html>
 
 <html lang="de">
   <head>
+    <style>#impressum,#datenschutz,#uberuns{display:none}</style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IPWA01: Meine responsive Seite</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Gender Automat</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/gender.js"></script>
   </head>
 
   <body>
-    <header>
-      <h1>IPWA01: Meine responsive Seite</h1>
+    <header class="bg-dark text-light text-center py-3">
+      <h1 class="display-1 text-center">Gender-Automat</h1>
+      <h2 class="display-6">Texte automatisch gendern!</h2>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Über uns</a></li>
-        <li><a href="#">Produkte</a></li>
-        <li><a href="#">Warenkorb</a></li>
-        <li><a href="#">Kooperationen</a></li>
+    <nav class="navbar bg-light">
+      <ul class="list-inline justify-content-center mx-auto">
+        <li class="list-inline-item"><a href="javascript:void(0);" onclick="zeigeHome()">Home</a></li>
+        <li class="list-inline-item"><a href="javascript:void(0);" onclick="subSitecontent('uberuns')">Über uns</a></li>
+        
       </ul>
     </nav>
 
     <main>
-      <article>
-        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
-        <img src="images/image1.webp" width="100" />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam alias
-          laudantium id ab suscipit ducimus eum quisquam omnis adipisci.
-          Explicabo cupiditate vero ab quisquam quos sit assumenda eum,
-          inventore esse. Libero explicabo neque blanditiis voluptate, dicta
-          fugit soluta fuga reiciendis nihil distinctio inventore, vero
-          laboriosam, saepe repudiandae totam delectus quae. Maxime repellat,
-          incidunt modi numquam itaque doloribus a, ex vel blanditiis esse
-          delectus, perferendis ipsum laudantium cupiditate corrupti et ut eius
-          quam optio voluptates magni qui dicta totam! Labore impedit quas
-          recusandae ipsum ea tenetur dolor quae rerum quisquam corporis itaque
-          nam, reiciendis iusto vitae dolores unde. Architecto, illo nesciunt.
-        </p>
-      </article>
-      <article>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
-        <img src="images/image1.webp" width="100" />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam alias
-          laudantium id ab suscipit ducimus eum quisquam omnis adipisci.
-          Explicabo cupiditate vero ab quisquam quos sit assumenda eum,
-          inventore esse. Libero explicabo neque blanditiis voluptate, dicta
-          fugit soluta fuga reiciendis nihil distinctio inventore, vero
-          laboriosam, saepe repudiandae totam delectus quae. Maxime repellat,
-          incidunt modi numquam itaque doloribus a, ex vel blanditiis esse
-          delectus, perferendis ipsum laudantium cupiditate corrupti et ut eius
-          quam optio voluptates magni qui dicta totam! Labore impedit quas
-          recusandae ipsum ea tenetur dolor quae rerum quisquam corporis itaque
-          nam, reiciendis iusto vitae dolores unde. Architecto, illo nesciunt.
-        </p>
-      </article>
-      <article>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
-        <img src="images/image1.webp" width="100" />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam alias
-          laudantium id ab suscipit ducimus eum quisquam omnis adipisci.
-          Explicabo cupiditate vero ab quisquam quos sit assumenda eum,
-          inventore esse. Libero explicabo neque blanditiis voluptate, dicta
-          fugit soluta fuga reiciendis nihil distinctio inventore, vero
-          laboriosam, saepe repudiandae totam delectus quae. Maxime repellat,
-          incidunt modi numquam itaque doloribus a, ex vel blanditiis esse
-          delectus, perferendis ipsum laudantium cupiditate corrupti et ut eius
-          quam optio voluptates magni qui dicta totam! Labore impedit quas
-          recusandae ipsum ea tenetur dolor quae rerum quisquam corporis itaque
-          nam, reiciendis iusto vitae dolores unde. Architecto, illo nesciunt.
-        </p>
-      </article>
-    </main>
+      <div id="main-content" class="row">
+        <article  class="col-lg-4 col-md-6 col-sm-12">
+            <br>
+            <h2>Anleitung: Kfz-Hebebühne</h2>
+            <br>
+            <p id="Hebebühne">
+                Zuerst stellt der Mitarbeiter sicher, dass die Hebebühne auf einer ebenen Fläche steht. 
+                Dann fährt der Fahrer das Fahrzeug vorsichtig auf die Plattform und positioniert es mittig. 
+                Anschließend die Handbremse anziehen und den Motor ausschalten. Nun den Hebel oder das Bedienfeld betätigen, 
+                um die Hebebühne langsam anzuheben. Während des Hebevorgangs regelmäßig die Stabilität des Fahrzeugs überprüfen. 
+                Sobald die gewünschte Höhe erreicht ist, die Hebebühne mit den Sicherheitsverriegelungen sichern. 
+                Zum Absenken den Vorgang in umgekehrter Reihenfolge wiederholen..
+            </p>
+            <br>
+            <button onclick="genderText('Hebebühne')">Text gendern</button>
+            <br>
+        </article>
+        <article class="col-lg-4 col-md-6 col-sm-12">
+            <br>
+            <h2>Anleitung: Ballett</h2>
+            <br>
+            <p id="Balett">
+                Zuerst stellen sich die Tänzer in der ersten Position auf. 
+                Die Füße sind nach außen gedreht, die Fersen berühren sich. 
+                Dann heben die Tänzer die Arme in die erste Position, 
+                wobei die Ellbogen leicht gebeugt sind. Anschließend führen die Tänzer eine Plié aus, 
+                indem sie die Knie beugen und den Rücken gerade halten. 
+                Danach strecken die Tänzer die Beine wieder und 
+                heben sich auf die Zehenspitzen für eine Relevé. 
+                Die Lehrer erklärt die nächste Bewegung. 
+                Zum Schluss führen die Tänzer eine Pirouette aus, 
+                indem sie sich auf einem Bein drehen und das andere Bein anheben.    
+            </p>
+            <br>
+            <button onclick="genderText('Balett')">Text gendern</button>
+            <br>
+        </article>    
+        <article class="col-lg-4 col-md-6 col-sm-12">
+            <br>
+            <h2>Anleitung: Haus bauen</h2>
+            <br>
+            <p id="Haus">
+                Beginne mit der Planung deines Hauses, 
+                indem du Baupläne erstellst und die notwendigen Genehmigungen einholst. 
+                Danach gräbst du die Baugrube aus und legst das Fundament, 
+                das die Basis für dein Haus bildet. Die Maurer errichten die Wände des Hauses, 
+                indem sie Ziegel oder Betonblöcke verwenden, um die Struktur zu formen. 
+                Anschließend installieren die Dachdecker das Dach und sorgen dafür, 
+                dass es wasserdicht und stabil ist. Die Elektriker verlegen die elektrischen 
+                Leitungen und installieren Steckdosen, Schalter und Beleuchtung. 
+                Danach folgt der Innenausbau, bei dem die Wände verputzt, 
+                Böden verlegt und Türen sowie Fenster installiert werden. 
+                Zum Schluss führst du die letzten Arbeiten durch, wie das Streichen der 
+                Wände und die Installation von Sanitäranlagen.
+            </p>
+            <br>
+            <button onclick="genderText('Haus')">Text gendern</button>
+            <br>
+        </article>        
+        <script>
+            function genderText(artikel){
+                const mas_femEndings = ["er", "or", "ig","in"];
+                const manPronom = ["er", "sein", "der"];
+                const femPronom = ["sie", "ihr", "die"];
+                let text = document.getElementById(artikel).innerText;
+                var words = text.split(" ");
+                for (let i=0;i<words.length;i++){
+                    for (let i2=0;i2<manPronom.length;i2++)
+                        if (words[i].toLowerCase()==manPronom[i2]||words[i].toLowerCase()==femPronom[i2]){
+                            for (let i3=0;i3<mas_femEndings.length;i3++)
+                                if (words[i+1].endsWith(mas_femEndings[i3])){
+                                    //document.getElementById("targetText").innerText=document.getElementById("targetText").innerText + words[i+1] 
+                                    words[i+1]=words[i+1]+":innen"
+                                    
+                                }    
+                        }
+                }
+                let neuerAbsatz=words.join(" ")
+                document.getElementById(artikel).innerText=neuerAbsatz
+            }
+            function subSitecontent(content) {
+            var mainContent = document.getElementById("main-content");
+            var subContent = document.getElementById(content);
+            mainContent.style.display = "none";
+            subContent.style.display = "block";
+            }
+            function zeigeHome(){
+                var mainContent = document.getElementById("main-content");
+                var impressum = document.getElementById("impressum");
+                var datenschutz = document.getElementById("datenschutz");
+                var uberuns = document.getElementById("uberuns");
+                mainContent.style.display = "inline-flex";
+                impressum.style.display = "none";
+                datenschutz.style.display = "none";
+                uberuns.style.display = "none";
+            }
 
-    <footer>
-      <ul>
-        <li><a href="#">Impressum</a></li>
-        <li><a href="#">Datenschutz</a></li>
+        </script>
+        
+      </div>
+    </main>
+    <div id="impressum">
+        <h2>Impressum</h2>
+        <p>Hier steht das Impressum</p>
+    </div>
+    <div id="datenschutz">
+        <h2>Datenschutz</h2>
+        <p>Hier stehen Informationen zum Datenschutz</p>
+    </div>
+    <div id="uberuns">
+        <h2>Infos über Uns</h2>
+        <p>Hier stehen Informationen über uns</p>
+    </div>
+
+    <footer class="mt-5 bg-light text-center">
+      <ul class="list-inline justify-content-center mx-auto">
+        <li class="list-inline-item"><a href="javascript:void(0);" onclick="subSitecontent('impressum')">Impressum</a></li>
+        <li class="list-inline-item"><a href="javascript:void(0);" onclick="subSitecontent('datenschutz')">Datenschutz</a></li>
       </ul>
     </footer>
+    
   </body>
 </html>
 >>>>>>> 850064ae7ccb64fcba54e69f915280bfaf0b5ca2
