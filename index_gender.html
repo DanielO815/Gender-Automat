@@ -2,6 +2,7 @@
 
 <html lang="de">
   <head>
+    <style>#impressum,#datenschutz,#uberuns{display:none}</style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gender Automat</title>
 
@@ -21,14 +22,14 @@
 
     <nav class="navbar bg-light">
       <ul class="list-inline justify-content-center mx-auto">
-        <li class="list-inline-item"><a href="#">Home</a></li>
-        <li class="list-inline-item"><a href="#">Über uns</a></li>
+        <li class="list-inline-item"><a href="javascript:void(0);" onclick="zeigeHome()">Home</a></li>
+        <li class="list-inline-item"><a href="javascript:void(0);" onclick="subSitecontent('uberuns')">Über uns</a></li>
         
       </ul>
     </nav>
 
     <main>
-      <div class="row">
+      <div id="main-content" class="row">
         <article  class="col-lg-4 col-md-6 col-sm-12">
             <br>
             <h2>Anleitung: Kfz-Hebebühne</h2>
@@ -88,7 +89,6 @@
             <br>
         </article>        
         <script>
-            
             function genderText(artikel){
                 const mas_femEndings = ["er", "or", "ig","in"];
                 const manPronom = ["er", "sein", "der"];
@@ -109,16 +109,46 @@
                 let neuerAbsatz=words.join(" ")
                 document.getElementById(artikel).innerText=neuerAbsatz
             }
+            function subSitecontent(content) {
+            var mainContent = document.getElementById("main-content");
+            var subContent = document.getElementById(content);
+            mainContent.style.display = "none";
+            subContent.style.display = "block";
+            }
+            function zeigeHome(){
+                var mainContent = document.getElementById("main-content");
+                var impressum = document.getElementById("impressum");
+                var datenschutz = document.getElementById("datenschutz");
+                var uberuns = document.getElementById("uberuns");
+                mainContent.style.display = "inline-flex";
+                impressum.style.display = "none";
+                datenschutz.style.display = "none";
+                uberuns.style.display = "none";
+            }
+
         </script>
         
       </div>
     </main>
+    <div id="impressum">
+        <h2>Impressum</h2>
+        <p>Hier steht das Impressum</p>
+    </div>
+    <div id="datenschutz">
+        <h2>Datenschutz</h2>
+        <p>Hier stehen Informationen zum Datenschutz</p>
+    </div>
+    <div id="uberuns">
+        <h2>Infos über Uns</h2>
+        <p>Hier stehen Informationen über uns</p>
+    </div>
 
     <footer class="mt-5 bg-light text-center">
       <ul class="list-inline justify-content-center mx-auto">
-        <li class="list-inline-item"><a href="#">Impressum</a></li>
-        <li class="list-inline-item"><a href="#">Datenschutz</a></li>
+        <li class="list-inline-item"><a href="javascript:void(0);" onclick="subSitecontent('impressum')">Impressum</a></li>
+        <li class="list-inline-item"><a href="javascript:void(0);" onclick="subSitecontent('datenschutz')">Datenschutz</a></li>
       </ul>
     </footer>
+    
   </body>
 </html>
